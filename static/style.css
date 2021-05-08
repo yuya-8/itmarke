@@ -1,0 +1,1952 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.48;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  footer {
+    background: #111;
+    color: #ccc;
+    padding: 50px;
+    text-align: center;
+    font-size: 13px;
+    border-top: #c00 3px solid;
+  }
+
+  #progress-text {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #c00;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+  }
+
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * These selection rule sets have to be separate.
+   * Customize the background color to match your design.
+   */
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  /*
+   * A better looking default horizontal rule
+   */
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  /*
+   * Remove default fieldset styles.
+   */
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+
+  textarea {
+    resize: vertical;
+  }
+
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  dt,
+  dd {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    /* border-bottom: 5px solid #b22c00; */
+    /* height: 40px; */
+    position: relative;
+  }
+
+  footer {
+    background: #111;
+    color: #ccc;
+    padding: 50px;
+    text-align: center;
+    font-size: 13px;
+    border-top: #0066cc 3px solid;
+  }
+
+  #hero {
+    text-align: center;
+    position: relative;
+    background: url(hero-bg.jpg) no-repeat center top;
+    /* background: url(camfoo.jpg) no-repeat center top; */
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  #h_logo {
+    width: 46px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #no1 {
+    position: absolute;
+    left: 50%;
+    top: 245px;
+    margin-left: 324px;
+  }
+
+  #topcopy {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 122px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  #topcopy_part {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  #topdescription {
+    background: #c00;
+    padding: 5px 60px 5px 60px;
+    display: inline-block;
+    color: #fff;
+  }
+
+  #topcopybottom {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    margin-bottom: 125px;
+  }
+
+  a#h_entry {
+    width: 278px;
+    height: 80px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background: #c00 url(../img/entry_arrow.png) no-repeat 255px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+
+  a#h_entry:hover {
+    background-position: 260px 30px;
+  }
+
+  .contents {
+    width: 980px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* ==========================================================================
+     プログレスバー　申込状況
+     ========================================================================== */
+  @-webkit-keyframes progress-bar-stripes {
+    from {
+      background-position: 40px 0;
+    }
+
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  @-o-keyframes progress-bar-stripes {
+    from {
+      background-position: 40px 0;
+    }
+
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  @keyframes progress-bar-stripes {
+    from {
+      background-position: 40px 0;
+    }
+
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .progress-striped .progress-bar,
+  .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+  }
+
+  .progress.active .progress-bar,
+  .progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+  }
+
+  .progress-bar-success {
+    background-color: #5cb85c;
+  }
+
+  .progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+  }
+
+  .progress-bar-info {
+    background-color: #5bc0de;
+  }
+
+  .progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+  }
+
+  .progress-bar-warning {
+    background-color: #f0ad4e;
+  }
+
+  .progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+  }
+
+  .progress-bar-danger {
+    background-color: #d9534f;
+  }
+
+  .progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent);
+  }
+
+  #progress-text {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* ==========================================================================
+     プログレスバー　申込状況
+     ========================================================================== */
+
+  .present {
+    background: url(prezent.png) no-repeat left top;
+    width: 918px;
+    margin: 0 auto;
+    min-height: 250px;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #333;
+  }
+
+  .precent_content {
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+
+  .precent_right {
+    float: right;
+    width: 590px;
+  }
+
+  .precent_right>span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .precent_right strong {
+    font-size: 32px;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E",
+      "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  }
+
+  .precent_right p {
+    font-size: 13px;
+  }
+
+  .precent_right .gentei {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .precent_right .senchaku {
+    font-size: 32px;
+    color: #b22c00;
+    text-decoration: underline;
+  }
+
+  #tokucho {
+    font-size: 38px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .needs {
+    background-color: rgb(255, 255, 255);
+  }
+
+  #needs_head {
+    margin-bottom: 30px;
+  }
+
+  #needs_head>h2 {
+    font-size: 20px;
+    font-size: 38px;
+    background: linear-gradient(transparent 60%, #f9c032 60%);
+    color: #133c73;
+    display: inline-block;
+  }
+
+  .orange_line {
+    background: linear-gradient(transparent 60%, #f9c032 60%);
+  }
+
+  .benefit {
+    background-color: #f5f6f7;
+    padding-bottom: 10px;
+  }
+
+  .benefit>h5 {
+    text-align: center;
+  }
+
+  #benefit_copy {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #c00;
+    padding-bottom: 30px;
+  }
+
+  #benefit_head {
+    margin-bottom: 30px;
+  }
+
+  #benefit_head>h2 {
+    font-size: 38px;
+    background: linear-gradient(transparent 60%, #f9c032 60%);
+    color: #133c73;
+    display: inline-block;
+  }
+
+  #point {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .points li {
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    list-style: none;
+    color: #133c73;
+  }
+
+  .points p {
+    margin-left: 95px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  a.btn-entry {
+    color: #fff;
+    background: #c00;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 450px;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    transition: all 0.3s ease;
+  }
+
+  a.btn-entry:hover {
+    opacity: 0.7;
+  }
+
+  .red {
+    color: #b22c00;
+  }
+
+  .tC {
+    text-align: center;
+  }
+
+  .tR {
+    text-align: right;
+  }
+
+  .mintyo {
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E",
+      "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  }
+
+  .need {
+    color: #c00;
+    font-size: 11px;
+    background: #fefefe;
+  }
+
+  #about .contents {
+    border: 6px solid #1c1364;
+    width: 865px;
+    margin-top: 150px;
+  }
+
+  #about .contents h2 {
+    text-align: center;
+    margin-top: -106px;
+  }
+
+  #about .contents h3 {
+    color: #fff;
+    background: #1c1364;
+    width: 214px;
+    font-size: 14px;
+    text-align: center;
+    margin: 60px auto 30px;
+  }
+
+  #about_copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  #about .contents dt,
+  #about .contents dd {
+    text-align: center;
+  }
+
+  #about .contents dt {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E",
+      "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  }
+
+  #about .contents dd {
+    font-size: 18px;
+    line-height: 2.2;
+  }
+
+  #about .contents table {
+    width: 700px;
+    margin: 60px auto;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  #about .contents table th {
+    vertical-align: top;
+    border-bottom: 2px solid #262177;
+  }
+
+  #about .contents table td {
+    vertical-align: top;
+    border-bottom: 2px solid #cdcce0;
+  }
+
+  #about .contents table tr:first-child th {
+    border-top: 2px solid #262177;
+  }
+
+  #about .contents table tr:first-child td {
+    border-top: 2px solid #cdcce0;
+  }
+
+  #about .contents table th,
+  #about .contents table td {
+    text-align: left;
+    padding: 10px;
+    width: 20px;
+  }
+
+  #seminor {
+    width: 800px;
+    height: 600px;
+    margin-left: 30px;
+  }
+
+  .seminor {
+    background-color: #f5f6f7;
+    padding-bottom: 5px;
+    overflow: hidden;
+  }
+
+  #seminor_head {
+    margin-bottom: 30px;
+  }
+
+  #seminor_head>h2 {
+    font-size: 20px;
+    font-size: 38px;
+    background: linear-gradient(transparent 60%, #f9c032 60%);
+    color: #133c73;
+    display: inline-block;
+  }
+
+  .seminor p {
+    margin-left: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  #entry {
+    padding-bottom: 60px;
+  }
+
+  #entry .contents {
+    width: 650px;
+    margin: 0 auto 30px;
+  }
+
+  /* #entry .contents input, */
+  #entry .contents textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  #entry h3 {
+    text-align: center;
+    color: #133c73;
+    font-size: 30px;
+  }
+
+  #f_submit {
+    background: #0066cc;
+    color: #fff;
+    padding: 10px;
+  }
+
+  #f_submit:hover {
+    opacity: 0.7;
+  }
+
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+  /*
+   * Hide visually and from screen readers:
+   */
+
+  .hidden {
+    display: none !important;
+  }
+
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   */
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .bullet {
+    padding-left: 0;
+  }
+
+  .bullet li {
+    padding-left: 35px;
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .bullet li:after,
+  .bullet li:before {
+    content: "";
+    height: 18px;
+    width: 4px;
+    display: block;
+    background: #c00;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
+
+  .bullet li:before {
+    height: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 16px;
+    left: 7px;
+  }
+
+  .recommend p {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -10px;
+  }
+
+  .recommend strong {
+    font-size: 20px;
+  }
+
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     http://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+  @media print {
+
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster:
+                                     http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]:after {
+      content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+      content: " ("attr(title) ")";
+    }
+
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    /*
+       * Printing Tables:
+       * http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+
+    thead {
+      display: table-header-group;
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+
+  .seminorImg {
+    width: 600px;
+    height: 400px;
+    margin-left: 125px;
+    margin-bottom: 30px;
+  }
+
+  #topcopybottom span {
+    font-size: 40px;
+  }
+
+  .hello {
+    font-weight: bolder;
+  }
+
+  .Organizer-image {
+    height: 300px;
+  }
+
+  .bg-style {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .c-container {
+    display: flex;
+    width: 120%;
+    margin: 100px auto;
+  }
+
+  .Organizer-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .Organizer-voice {
+    width: 40%;
+    padding: 30px;
+    background-color: #faf000;
+  }
+
+  .Organizer-voice p {
+    font-weight: normal;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .article-01 {
+    padding: 20px 0;
+  }
+
+  .article-01 {
+    padding: 50px 0;
+    /* border-bottom: 1px solid #dcdddd; */
+  }
+
+  .container {
+    max-width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .content_title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .lession-list {}
+
+  .lession-list ul li {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid #dcdddd;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .lession-list ul li .lession-inner {
+    display: table;
+    float: left;
+    width: 56%;
+  }
+
+  .lession-list ul li .lession-num {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .overview .lession-list .lession-num .lession-num-txt {
+    background: #133c73;
+  }
+
+  .lession-list ul li .lession-num .lession-num-txt {
+    display: table;
+    width: 96px;
+    height: 96px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .lession-list ul li .lession-num .txt {
+    font-size: 20px;
+    line-height: 1.1;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+  }
+
+  .lession-list ul li .lession-num .txt .num {
+    font-size: 35px;
+    display: block;
+  }
+
+  .lession-list ul li .image {
+    display: table-cell;
+    width: 73%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    vertical-align: middle;
+  }
+
+  .lession-list ul li .lession-text {
+    float: right;
+    width: 40%;
+  }
+
+  .overview .lession-title {
+    color: #133c73;
+  }
+
+  .mentar-block {
+    margin: 100px 0 50px;
+  }
+
+  p.manterText {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  p.manterName {
+    font-size: 20px;
+  }
+
+  .mentar-block h2 {
+    color: #1c1264;
+    font-size: 28px;
+  }
+
+  .lession-list ul li .image {
+    display: table-cell;
+    width: 73%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    vertical-align: middle;
+  }
+
+  img {
+    max-width: 100%;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  section#flow {
+    background: #f5f6f7;
+  }
+
+  .workshop {
+    max-width: 960px;
+    margin: 23px auto 50px;
+  }
+
+  .workshop p {
+    margin: 0;
+  }
+
+  .monopolyImage {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .monopolyText {
+    padding-left: 48px;
+  }
+
+  .monopoly-block {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .voice-block {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid #dcdddd;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .voice-block p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .other-voice h3 {
+    color: #1c1264;
+    font-size: 28px;
+  }
+
+  .four-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .icon-block {
+    text-align: center;
+    width: 100px;
+    margin: 0 auto 20px;
+  }
+
+  .four-item {
+    width: 45.5%;
+    border: 2px dotted;
+    padding: 10px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+  }
+
+  li.four-item:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .itemTitle {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .itemTitle span {
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #fac133;
+  }
+
+  .monopolyText span {
+    font-size: 24px;
+  }
+
+  .learnning {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 24px;
+  }
+
+  .learnning span {
+    font-size: 33px;
+    color: #cc1c00;
+  }
+
+  .itemText-block {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .itemText-block p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+
+  .bussinessPlan {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .specialOffer {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .specialOfferTitle {
+    font-size: 40px;
+  }
+
+  .bussinessPlan-Text p {
+    margin-left: 0;
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .colona-care {
+    border: 2px dotted;
+    padding: 20px;
+    max-width: 830px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .colona-care h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+
+  .colona-care p {
+    padding-bottom: 0;
+    margin-left: 0;
+    font-weight: normal;
+  }
+
+  @media (min-width: 768px) {
+    .sp_only {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 768px) and (min-width: 321px) {
+    .pc_only {
+      display: none !important;
+    }
+
+    .contents {
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    #about .contents {
+      border: 2px solid #1c1364;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
+
+    .seminorImg {
+      width: 100%;
+      margin: 0;
+      height: auto;
+      padding: 0;
+    }
+
+    #about .contents table {
+      width: 100%;
+      margin: 60px auto;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    #entry .contents {
+      width: 80%;
+      margin: 0 auto 30px;
+    }
+
+    a.btn-entry {
+      color: #fff;
+      background: #cc1c00;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      padding: 10px 0 10px 0;
+      transition: all 0.3s ease;
+      border-bottom: 5px solid #ac1125;
+    }
+
+    a.btn-entry:hover {
+      margin-top: 3px;
+      color: #fff;
+      background: #f56500;
+      border-bottom: 2px solid #b84c00;
+    }
+    a.btn-entry {
+      -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+      box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
+    }
+
+
+
+
+
+    #entry .contents input[type="text"],
+    #entry .contents input[type="submit"],
+    #entry .contents textarea {
+      width: 94%;
+      padding: 10px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    #entry .contents input .radio_button {
+      /* width: 94%; */
+      padding: 10px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+
+
+    #topcopy {
+      font-size: 25px;
+      font-weight: bold;
+      color: #fff;
+      text-align: left;
+      width: 92%;
+      margin: 0 auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    #topcopy_part {
+      font-size: 55px;
+      line-height: 1.0;
+      font-weight: bold;
+      margin-top: 45px;
+      color: #fff;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    #topcopybottom {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-left: 16px;
+      text-align: left;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+
+    #topcopybottom span {
+      font-size: 18px;
+    }
+
+    a#h_entry {
+      width: 278px;
+      height: 80px;
+      color: #fff;
+      display: block;
+      position: absolute;
+      right: 1px;
+      bottom: 0;
+      display: none;
+      top: 0;
+      background: #eb396c url(../img/entry_arrow.png) no-repeat 255px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 80px;
+      text-align: center;
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+
+    .benefitImg {
+      height: 36px;
+    }
+
+    #benefit_copy {
+      text-align: left;
+      font-size: 23px;
+      font-weight: bold;
+      color: #cc1c00;
+      padding-bottom: 0px;
+    }
+
+    #benefit_head>h2 {
+      font-size: 23px;
+      background: linear-gradient(transparent 60%, #f9c032 60%);
+      color: #133c73;
+      display: inline-block;
+    }
+
+    h1 {
+      padding: 0;
+      width: 93%;
+      margin: 0 auto;
+      /* text-align: center; */
+      /* margin: 0; */
+      font-size: 13px;
+      padding-top: 10px;
+    }
+
+    ul.points {
+      padding: 0;
+    }
+
+    #point {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 15px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .pc_only {
+      display: none;
+    }
+
+    .points li {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      color: #333;
+      list-style: none;
+      color: #133c73;
+    }
+
+    .points p {
+      margin-left: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      margin-top: 0px;
+      /* font-weight: bold; */
+    }
+
+    #needs_head>h2 {
+      font-size: 20px;
+      font-size: 23px;
+      background: linear-gradient(transparent 60%, #f9c032 60%);
+      color: #133c73;
+      display: inline-block;
+    }
+
+    #about .contents table tr:first-child th {
+      border-top: 2px solid #262177;
+      /* width: 90%; */
+      width: 50px;
+      /* padding: 20px; */
+    }
+
+    #seminor_head>h2 {
+      font-size: 23px;
+      margin-top: 42px;
+      background: linear-gradient(transparent 60%, #f9c032 60%);
+      color: #133c73;
+      display: inline-block;
+    }
+
+    .seminor p {
+      font-size: 15px;
+      margin-left: 0;
+      padding-bottom: 15px;
+      margin-bottom: 0px;
+      margin-top: 13px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .bullet li h1{
+      /* padding-left: 36px; */
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      list-style: none;
+      position: relative;
+      margin-left: 0;
+    }
+
+    .bullet li{
+      padding-left: 36px;
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      list-style: none;
+      position: relative;
+      margin-left: 0;
+    }
+
+    .bullet li p{
+      font-size: 15px;
+    }
+
+    #tokucho {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hello {
+      font-weight: normal;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 80px;
+      text-align: center;
+      font-size: 13px;
+      border-top: #0066cc 3px solid;
+    }
+
+    .recommend strong {
+      font-size: 19px;
+    }
+
+    #hero {
+      text-align: center;
+      position: relative;
+      /* background: url(hero-bg.jpg) no-repeat center top; */
+      background: url(ad2.png) no-repeat center top;
+      height: auto;
+      width: 100%;
+      margin-bottom: 30px;
+      background-size: cover;
+    }
+
+    .floating-banner {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: 0 6px 40px 0 rgba(56, 6, 24, 0.1);
+      z-index: 200;
+    }
+
+    .floating-banner .act-button {
+      display: block;
+      max-width: 450px;
+      width: 73%;
+      padding: 15px 50px;
+      background: #cc1c00;
+      border-radius: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 10px auto;
+      color: #fff;
+      border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+      box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    }
+
+    .creative {
+      width: 100%;
+    }
+
+    #f_submit {
+      padding: 10px;
+      display       : inline-block;
+      border-radius : 5%;          /* 角丸       */
+      font-size     : 20px;        /* 文字サイズ */
+      text-align    : center;      /* 文字位置   */
+      cursor        : pointer;     /* カーソル   */
+      padding       : 12px 12px;   /* 余白       */
+      background    : #6666ff;     /* 背景色     */
+      color         : #ffffff;     /* 文字色     */
+      line-height   : 1em;         /* 1行の高さ  */
+      transition    : .3s;         /* なめらか変化 */
+      box-shadow    : 3px 3px 1px #666666;  /* 影の設定 */
+      border        : 2px solid #6666ff;    /* 枠の指定 */
+    }
+
+    #f_submit:hover {
+      box-shadow    : none;        /* カーソル時の影消去 */
+      color         : #6666ff;     /* 背景色     */
+      background    : #ffffff;     /* 文字色     */
+    }
+
+    .c-container {
+      display: block;
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .Organizer-voice {
+      width: 91%;
+      margin: 0 auto;
+      padding: 16px;
+      background-color: #f5f6f7;
+    }
+
+    .Organizer-voice p {
+      font-weight: normal;
+      margin-left: 0;
+      font-size: 14px;
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    .Organizer-image {
+      width: 100%;
+      height: 350px;
+    }
+
+    .event-image {
+      width: 80%;
+      margin:0 10%;
+    }
+
+    h3 {
+      margin: 0 0 21px;
+    }
+
+    #entry h3 {
+      text-align: center;
+      color: #133c73;
+      font-size: 23px;
+    }
+
+    .article-01 {
+      padding: 10px 0;
+      max-width: 90%;
+    }
+
+    .lession-list {
+      padding: 0 0px;
+    }
+
+    .lession-list ul li {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .lession-list ul li .lession-inner {
+      position: relative;
+      display: block;
+      float: none;
+      width: 100%;
+    }
+
+    .lession-list ul li .lession-num {
+      position: absolute;
+      bottom: -13%;
+      left: 4%;
+      display: block;
+    }
+
+    .lession-list ul li .lession-num .lession-num-txt {
+      width: 70px;
+      height: 70px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .lession-list ul li .lession-num .txt {
+      font-size: 16px;
+    }
+
+    .lession-list ul li .lession-num .txt .num {
+      font-size: 25px;
+    }
+
+    .lession-title {
+      font-size: 18px;
+      margin: 3% 1% 0% 0%;
+      text-align: center;
+    }
+
+    .lession-list ul li .lession-text p {
+      font-size: 14px;
+      line-height: 178.5%;
+    }
+
+    .lession-list ul li .lession-text {
+      float: none;
+      width: 100%;
+    }
+
+    .lession-list ul li .lession-text p {
+      padding: 0 20px 10px;
+    }
+
+    .lession-list ul li .image {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .four-item {
+      width: 85.5%;
+      border: 2px dotted;
+      padding: 10px;
+      padding-top: 20px;
+      /* margin-right: 20px; */
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    .itemTitle {
+      text-align: center;
+      font-size: 20px !important;
+      margin-bottom: 0 !important;
+    }
+
+    .itemText-block p {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    li.four-item:nth-child(even) {
+      margin-right: auto;
+    }
+
+    .monopoly-block {
+      display: block;
+      margin-top: 35px;
+    }
+
+    .monopolyText {
+      padding-left: 0;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .monopolyImage {
+      width: 100%;
+      margin: 0 auto;
+      box-shadow: none;
+      display: none;
+    }
+
+    #benefit_copy {
+      text-align: center;
+      font-size: 23px;
+      font-weight: bold;
+      color: #cc1c00;
+      padding-bottom: 0px;
+    }
+
+    .learnning span {
+      font-size: 24px;
+      color: #cc1c00;
+    }
+
+    .learnning {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 20px;
+    }
+
+    .itemText-block {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    .mentar-block {
+      margin: 30px;
+    }
+
+    #topdescription {
+      background: #c00;
+      padding: 5px 15px 5px 15px;
+      display: inline-block;
+      text-align: left;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .tC {
+      width: 90%;
+      margin: 30px auto !important;
+    }
+
+    .voice-block p {
+      font-size: 13px;
+    }
+
+    .voice-block {
+      position: relative;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #dcdddd;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    h2.specialOfferTitle {
+      font-size: 30px !important;
+    }
+
+    .bussinessPlan {
+      width: 99%;
+      margin: 0 auto;
+    }
+
+    .specialOffer {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .colona-care p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .colona-care li {
+      padding-bottom: 15px;
+    }
+
+    .monopolyText p {
+      font-weight: bold !important;
+    }
+
+    p.manterName {
+      font-weight: bold;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-size: 25px;
+      vertical-align: middle;
+      padding-top: 13px;
+    }
+
+    body {
+      font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic,
+        メイリオ, Meiryo, sans-serif;
+      margin: 0;
+    }
+
+    div.input_button {
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+      border-radius: 0;
+      -webkit-box-sizing: content-box;
+      -webkit-appearance: button;
+      appearance: button;
+      border: none;
+      box-sizing: border-box;
+    }
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+  }
