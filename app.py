@@ -12,12 +12,14 @@ def move_complete():
     name = request.form.get("name")
     email = request.form.get("email")
     datetime = request.form.get("datetime")
+    enthusiasm = request.form.get("enthusiasm")
 
     url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScNkBYMgWRGm6cKjA3YVp10SpiqyMlqAilKOqBifaBDo1DMmw/formResponse"
     params = {
         "entry.1498135098": name,
         "entry.567211892": email,
-        "entry.1238054153": datetime
+        "entry.1238054153": datetime,
+        "entry.1451519688": enthusiasm
     }
     r = requests.get(url, params=params)
 
